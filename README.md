@@ -1,6 +1,8 @@
 # Zipper
 Implementation of the ZIP standard for storing (without compression) multiple attachments directly from Server code in ServiceNow.
 
+The structure is implemented using the following documentations: [The structure of a PKZip file](https://users.cs.jmu.edu/buchhofp/forensics/formats/pkzip.html#datadescriptor)
+
 # How to install
 Create two new Script Includes, and copy-paste the JS files in this repository:
 - CRC32: Copy the content of the CRC32.js file
@@ -21,7 +23,8 @@ zipper.write(TARGET_TABLE, TARGET_ID, "Archive Filename"); // .zip extension aut
 
 # Know Problems
 ## Malformed Structure
-The PKZip structure is not completely build correclty, the native Window's ZIP utility will refuse to open the file. Use the 7-ZIP utility to handle the file.
+The PKZip structure is not completely build correctly, the native Window's ZIP utility will refuse to open the file.\
+For the time being, use the 7-ZIP utility to handle the file.
 
 ## ServiceNow UTF-8 Encoding
 The main problem of the class resides in the ServiceNow's `GlideSysAttachment.write()` method that translate the Unicode bytes into UTF-8 ones.
