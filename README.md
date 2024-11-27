@@ -37,7 +37,8 @@ ServiceNow is aware of the bug but, at the moment, refuse to provide a solution.
 For more information, refer to: [Any get GlideSysAttachment.write to work for binary files while in a scope?](https://www.servicenow.com/community/developer-forum/any-get-glidesysattachment-write-to-work-for-binary-files-while/m-p/1601628/page/3)
 
 # Platform Configuration
-Scope: Global\
-Build name: Washingtondc\
-Build date: 09-27-2024_0148\
-Build tag: glide-washingtondc-12-20-2023__patch8-09-19-2024\
+Configuration of the development instance:\
+**Scope**: Global\
+**Build name**: Washingtondc\
+**Build date**: 09-27-2024_0148\
+**Build tag**: glide-washingtondc-12-20-2023__patch8-09-19-2024\
