@@ -4,7 +4,7 @@ var CRC32 = Class.create();
  * Class used to evaluate the CRC-32 checksum for a string or an array of bytes.
  *
  * @author Alex (original code)
- * @author Samuele Berlusconi (subsequent changes)
+ * @author Samuele Berlusconi (Github: @SamueleBerlusconi) (subsequent changes)
  * @see https://stackoverflow.com/a/18639999
  * @license Apache-2.0
  */
